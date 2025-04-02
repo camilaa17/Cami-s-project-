@@ -1,0 +1,76 @@
+body{
+    background-color: pink;
+}
+
+font-family: 'Poppins', sans-serif;
+    background-color: #fff0f6; /* Soft pastel pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    background-color: #fdc9c9; /* Light strawberry pink */
+    padding: 20px;
+    min-height: 100vh;
+    box-shadow: 4px 0 10px rgba(46, 46, 46, 0.1);
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcfcf; 
+}
+
+.btn-primary {
+    background-color: #ffcece;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffd5d5;
+}
+
+.content-section {
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1, h4 {
+    color: #ffcfcf;
+}
+
+img {
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+body{
+    background-image: url('https://i.pinimg.com/736x/a5/c7/bd/a5c7bd9542d3c4a2f6258d4a41c3c506.jpg');
+}
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centers it horizontally */
+    align-items: center; /* Centers it vertically */
+    width: 100%;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.logo {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff; /* Optional */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
