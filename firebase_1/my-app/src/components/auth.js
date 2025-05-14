@@ -7,24 +7,31 @@ function Auth() {
 
     console.log(auth?.currentUser?.email)
 
-async function signUp() { //create a functions that runs when they click button
-    try {
-    await createUserWithEmailAndPassword(auth, email, password)
-    }
-    catch(err) {
-        alert(err)
-        
-    }
-};
-async function signIn() {
-    try {
-        await signInWithEmailAndPassword(auth, email, password)
-    }
-    catch(err) {
-        alert(err)
-    }
-}
-async function logout() {
+    async function signUp() {
+        if (!email || !email.includes("@")) {
+            alert("Please enter a valid email.");
+            return;
+        }
+    
+        try {
+            await createUserWithEmailAndPassword(auth, email, password);
+        } catch (err) {
+            alert(err);
+        }
+    };
+    async function signIn() {
+        if (!email || !email.includes("@")) {
+            alert("Please enter a valid email.");
+            return;
+        }
+    
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+        } catch (err) {
+            alert(err);
+        }
+    };
+    async function logout() {
     try{ 
         await signOut(auth);
     }catch(err) {
